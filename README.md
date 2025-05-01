@@ -2,7 +2,7 @@
 
 A simple e-commerce product listing app built with **React** and **Tailwind CSS**, featuring:
 
-- ✅ Product list fetched from [FakeStoreAPI](https://fakestoreapi.com/)
+- ✅ Product list fetched from (https://fakestoreapi.com/)
 - 🔍 Search functionality
 - 🛒 Cart system with item quantity tracking
 - 📦 Persistent cart (using localStorage)
@@ -14,7 +14,7 @@ A simple e-commerce product listing app built with **React** and **Tailwind CSS*
 
 ## 🚀 Demo
 
-**Live Preview**: [Your Live Link Here](https://ecommerce-app-wine-delta.vercel.app/)
+**Live Preview**: (https://ecommerce-app-wine-delta.vercel.app/)
 
 ---
 
