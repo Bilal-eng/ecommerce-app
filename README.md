@@ -14,7 +14,7 @@ A simple e-commerce product listing app built with **React** and **Tailwind CSS*
 
 ## 🚀 Demo
 
-**Live Preview**: [Your Live Link Here](https://your-live-demo.vercel.app)
+**Live Preview**: [Your Live Link Here](https://ecommerce-app-wine-delta.vercel.app/)
 
 ---
 
