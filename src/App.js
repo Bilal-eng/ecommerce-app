@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
-import { useCartStore } from './store/cartStore'; // adjust path based on your structure
+import { useCartStore } from './store/cartStore';
 
 function App() {
-  const cart = useCartStore((state) => state.cart); // Zustand cart
+  const cart = useCartStore((state) => state.cart);
+  const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <Router>
@@ -15,7 +16,7 @@ function App() {
           <Link to="/cart" className="hover:underline">Cart</Link>
           {cart.length > 0 && (
             <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
-              {cart.length}
+              {itemCount}
             </span>
           )}
         </div>

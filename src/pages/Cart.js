@@ -5,7 +5,7 @@ const Cart = () => {
     const cart = useCartStore((state) => state.cart);
     const removeFromCart = useCartStore((state) => state.removeFromCart);
 
-    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     return (
         <div className="p-4 max-w-4xl mx-auto">
@@ -20,6 +20,7 @@ const Cart = () => {
                             <div className="ml-4 flex-1">
                                 <h2>{item.title}</h2>
                                 <p className="text-green-600">${item.price}</p>
+                                <p className="text-sm">Quantity: {item.quantity}</p>
                             </div>
                             <button
                                 className="bg-red-500 text-white px-2 py-1 rounded"
